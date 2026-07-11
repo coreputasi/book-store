@@ -1,29 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BUKA BUKU</title>
-    <link rel="stylesheet" href="/style.css">
+    <title>Buka Buku - Toko Buku Online</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Nunito:wght@400;600&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Buka Buku.</h1>
-    <p>"Setiap Halaman, Selalu Menyenangkan."</p>
+    <div id="page-wrapper">
+        <header class=" site-header">
+            <div class="container navbar">
+                <a href="#" class="logo">BukaBuku</a>
 
-    <div class="card-container">
-        <div class="card" id="kategori-populer">
-            <h2>Kategori Populer</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium maxime quis optio sequi officiis
-                asperiores?</p>
-        </div>
+                <button class="menu-toggle" aria-label="Buka menu navigasi" aria-expanded="false"
+                    aria-controls="main-nav-list">
+                    ☰
+                </button>
+
+                <nav class="main-nav" aria-label="Main navigation">
+                    <ul id="main-nav-list">
+                        <li><a href="#" aria-current="page">Beranda</a></li>
+                        <li><a href="#">Koleksi</a></li>
+                        <li><a href="#">Kontak</a></li>
+                    </ul>
+                </nav>
+
+                <a href="/cart" class="cart-link" aria-label="Lihat keranjang belanja">
+                    🛒 <span class="cart-count">0</span>
+                </a>
+            </div>
+        </header>
+        <main>
+            <h1>Buka Buku.</h1>
+            <p>Browse our collection of amazing books!</p>
+            <div class="card-container">
+                <div class="card" id="sally-adventure-book">
+                    <h2>Sally's SciFi Adventure</h2>
+                    <p>This is an epic story of Sally and her dog Rex as they navigate through other worlds.</p>
+                    <button class="btn">Buy Now</button>
+                </div>
+
+                <div class="card" id="dave-cooking-book">
+                    <h2>Dave's Cooking Adventure</h2>
+                    <p>This is the story of Dave as he learns to cook everything from pancakes to pasta, one recipe
+                        at a time.
+                    </p>
+                    <button class="btn">Buy Now</button>
+                </div>
+            </div>
+
+            <p>Review your selections and continue to checkout.</p>
+            <div class="btn-container">
+                <button id="view-cart-btn" class="btn">View Cart</button>
+                <button id="checkout-btn" class="btn">Checkout</button>
+            </div>
+        </main>
+
+        <footer>
+
+        </footer>
     </div>
-    <div class="card-container"></div>
 </body>
 
 </html>

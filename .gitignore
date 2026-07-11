@@ -1,0 +1,11 @@
+# Editor
+.vscode/
+
+# OS-generated files
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# File percobaan/debug
+test.html
+*.test.html
