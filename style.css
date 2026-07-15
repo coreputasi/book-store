@@ -1,10 +1,11 @@
-/* typography tokens */
+/* ==========================================================
+   TYPOGRAPHY TOKENS
+   ========================================================== */
 :root {
   --font-display: "Fredoka", sans-serif;
   --font-body: "Nunito", "Segoe UI", Roboto, sans-serif;
 
   --fs-sm: 0.875rem;
-
   --fs-base: 1rem;
   --fs-lg: 1.25rem;
   --fs-xl: 1.75rem;
@@ -15,82 +16,25 @@
   --color-bg: #fbf6ec;
   --color-surface: #ffffff;
   --color-header-bg: #ffffff;
+  --color-ink: #2b2438;
+  --color-accent: #e8a33d;
 }
 
+/* ==========================================================
+   BASE — BODY
+   ========================================================== */
 body {
   font-family: var(--font-body);
   font-size: clamp(0.95rem, 0.9rem + 0.25vw, 1.05rem);
   font-weight: 400;
   line-height: 1.6;
+  color: var(--color-ink);
+  background-color: var(--color-bg);
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  background-color: var(--color-bg);
 }
 
-.site-header {
-  background-color: var(--color-header-bg);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
-}
-h1,
-h2,
-h3,
-h4 {
-  font-family: var(--font-display);
-  font-weight: 600;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
-  margin-bottom: 0.75em;
-}
-
-p {
-  max-width: 65ch;
-  margin-bottom: 1em;
-}
-
-a {
-  text-decoration: underline;
-  text-decoration-color: transparent;
-  text-underline-offset: 3px;
-  transition:
-    text-decoration-color 0.2s ease,
-    opacity 0.2s ease;
-}
-
-a:hover {
-  text-decoration-color: currentColor;
-  opacity: 0.75;
-}
-
-a:focus-visible {
-  outline: 2px solid currentColor;
-  outline-offset: 3px;
-  border-radius: 2px;
-}
-
-strong {
-  font-weight: 600;
-}
-
-em {
-  font-style: italic;
-}
-
-main ul,
-main ol {
-  padding-left: 1.25rem;
-  margin-bottom: 1em;
-}
-
-main li {
-  margin-bottom: 0.25em;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.card {
-  background-color: var(--color-surface);
-}
+/* ==========================================================
+   SKIP LINK
